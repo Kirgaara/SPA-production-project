@@ -43,7 +43,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies,
     'no-param-reassign': 'off',
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'object-curly-newline': 'off',
   },
   globals: {
@@ -55,6 +55,7 @@ module.exports = {
       rules: {
         'i18next/no-literal-string': 'off',
         'max-len': 'off',
+        'react/jsx-props-no-spreading': 'off',
       },
     },
   ],
